@@ -15,13 +15,13 @@ Product managers at Blinkit need to know what users are complaining about, which
 ## Architecture
 ```mermaid
 graph TD
-    A[Google Play] -->|google-play-scraper| B(SQLite data/reviews.db)
-    B --> C[Clean & DQ Checks]
-    C --> D[Sentiment Analysis (RoBERTa)]
-    D --> E[Theme Tagging (Sentence-Transformers + Regex)]
-    E --> F[Impact Analysis (Statsmodels Regression)]
-    F --> G[Export to Parquet]
-    G --> H[Streamlit Dashboard]
+    A["Google Play"] -->|google-play-scraper| B[("SQLite data/reviews.db")]
+    B --> C["Clean & DQ Checks"]
+    C --> D["Sentiment Analysis (RoBERTa)"]
+    D --> E["Theme Tagging (Sentence-Transformers + Regex)"]
+    E --> F["Impact Analysis (Statsmodels Regression)"]
+    F --> G["Export to Parquet"]
+    G --> H["Streamlit Dashboard"]
 ```
 
 ## Methodology
