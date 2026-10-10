@@ -1,0 +1,21 @@
+# Virtual environments
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+
+# Data
+data/reviews.db
+data/cache/
+data/gold/gold_labeled.csv
+
+# Keep processed data for the app
+!data/processed/
+
+# Streamlit
+.streamlit/
+
+# IDEs
+.vscode/
+.idea/

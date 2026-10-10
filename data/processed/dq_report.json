@@ -1,0 +1,36 @@
+{
+  "row_count": 200,
+  "min_date": "2026-04-21T13:56:13+00:00",
+  "max_date": "2026-09-18T22:50:19+00:00",
+  "max_gap_days": 75,
+  "null_rates": {
+    "review_id": 0.0,
+    "app_id": 0.0,
+    "content": 0.0,
+    "rating": 0.0,
+    "thumbs_up": 0.0,
+    "app_version": 0.0,
+    "reviewed_at": 0.0,
+    "reply_text": 0.005,
+    "ingested_at": 0.0,
+    "review_date": 0.0,
+    "has_emoji": 0.0,
+    "word_count": 0.0,
+    "lang": 0.0,
+    "likely_hinglish": 0.0,
+    "review_month": 0.0,
+    "review_week": 0.0,
+    "is_negative_rating": 0.0
+  },
+  "null_check": "PASS",
+  "rating_sanity": "PASS",
+  "volume_anomalies": [
+    "2026-09-16"
+  ],
+  "english_share": 1.0,
+  "hinglish_share": 0.0,
+  "duplicate_rate": 0.0,
+  "freshness_days": 21,
+  "freshness_check": "PASS",
+  "status": "PASS"
+}

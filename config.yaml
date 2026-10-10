@@ -1,0 +1,38 @@
+app_id: "com.grofers.customerapp"
+lang: "en"
+country: "in"
+
+ingest:
+  max_reviews: 50000
+  batch_size: 200
+  sleep_seconds: 1.0
+  db_path: "data/reviews.db"
+
+clean:
+  min_words: 3
+  # A sample list of Hindi stopwords commonly used in roman script
+  hindi_stopwords: ["nahi", "hai", "bahut", "kya", "bakwas", "bekar", "accha", "achha", "aur", "ki"]
+
+quality:
+  max_gap_days: 90
+  max_null_rate: 0.05
+  anomaly_mad_threshold: 3
+  freshness_days: 60
+
+sentiment:
+  model_id: "cardiffnlp/twitter-roberta-base-sentiment-latest"
+  max_tokens: 256
+  use_vader_fallback: false
+  batch_size: 16
+
+themes:
+  embedding_model: "all-MiniLM-L6-v2"
+  similarity_threshold: 0.4
+  taxonomy_path: "themes.yaml"
+  cache_dir: "data/cache"
+
+impact:
+  min_reviews_per_version: 50
+
+app:
+  sample_size: 20000 # App displays only last N reviews

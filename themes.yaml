@@ -1,0 +1,104 @@
+themes:
+  - id: delivery_delay
+    name: Delivery delay / late orders
+    description: Complaints about orders taking too long or arriving past the promised time.
+    keywords: ["late", "delay", "time", "wait", "slow"]
+    seed_phrases:
+      - "The order was delivered very late."
+      - "I had to wait 2 hours for my groceries."
+
+  - id: missing_wrong_items
+    name: Missing or wrong items
+    description: Issues with missing products or receiving the wrong item.
+    keywords: ["missing", "wrong", "forgot", "incorrect"]
+    seed_phrases:
+      - "Half of my items were missing."
+      - "I received the wrong product instead of what I ordered."
+
+  - id: refund_payment
+    name: Refund and payment-reversal problems
+    description: Money deducted but order failed, or refund not processed.
+    keywords: ["refund", "money", "deducted", "return", "bank"]
+    seed_phrases:
+      - "My money was deducted but the order failed."
+      - "Still waiting for my refund after a week."
+
+  - id: payment_failure
+    name: Payment failures / checkout errors
+    description: App errors during checkout or payment processing.
+    keywords: ["payment", "checkout", "error", "fail", "card", "upi"]
+    seed_phrases:
+      - "Payment keeps failing at checkout."
+      - "UPI is not working on the app."
+
+  - id: product_quality
+    name: Product quality / freshness
+    description: Damaged, expired, or stale products.
+    keywords: ["stale", "expired", "rotten", "smell", "damaged", "quality", "bad"]
+    seed_phrases:
+      - "The vegetables were completely rotten."
+      - "Received expired milk today."
+
+  - id: pricing_fees
+    name: Pricing, fees, and surge/handling charges
+    description: Complaints about high prices, surge pricing, or hidden fees.
+    keywords: ["price", "expensive", "fee", "charge", "surge", "handling", "cost"]
+    seed_phrases:
+      - "The handling fee is way too high."
+      - "Prices are much higher than the local market."
+
+  - id: delivery_partner
+    name: Delivery partner behavior
+    description: Rude delivery agents, asking for extra money, or unprofessional behavior.
+    keywords: ["behavior", "rude", "delivery boy", "agent", "guy", "attitude"]
+    seed_phrases:
+      - "The delivery boy was very rude."
+      - "Delivery agent refused to come to my door."
+
+  - id: app_bugs
+    name: App bugs / crashes / slow performance
+    description: Technical issues with the app crashing or lagging.
+    keywords: ["crash", "bug", "lag", "slow", "hang", "update", "glitch"]
+    seed_phrases:
+      - "The app keeps crashing after the new update."
+      - "Very slow performance when scrolling."
+
+  - id: login_otp
+    name: Login / OTP / account issues
+    description: Unable to login, OTP not received, or account blocked.
+    keywords: ["login", "otp", "block", "number", "account", "sign in"]
+    seed_phrases:
+      - "Not receiving OTP for login."
+      - "My account was blocked for no reason."
+
+  - id: customer_support
+    name: Customer support quality
+    description: Poor customer service, unhelpful bot, or no response.
+    keywords: ["support", "service", "care", "bot", "chat", "call", "helpline"]
+    seed_phrases:
+      - "Customer care is absolutely useless."
+      - "The chat bot doesn't help at all."
+
+  - id: out_of_stock
+    name: Item unavailability / out-of-stock
+    description: Items are frequently out of stock or unavailable in the area.
+    keywords: ["stock", "unavailable", "empty", "show", "available"]
+    seed_phrases:
+      - "Most items are always out of stock."
+      - "App shows item available but then it gets cancelled."
+
+  - id: positive_speed
+    name: "Positive: speed and convenience"
+    description: Praise for fast delivery and convenience.
+    keywords: ["fast", "quick", "speed", "convenient", "10 min", "minute"]
+    seed_phrases:
+      - "Amazing 10 minute delivery."
+      - "Very fast and convenient."
+
+  - id: positive_quality
+    name: "Positive: product range / quality"
+    description: Praise for good quality products and wide variety.
+    keywords: ["good", "fresh", "variety", "range", "best"]
+    seed_phrases:
+      - "Great quality fruits and vegetables."
+      - "Love the wide variety of products available."

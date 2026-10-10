@@ -1,0 +1,42 @@
+name: Data Refresh Pipeline
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Weekly on Sunday
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Cache Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ runner.os }}-hf-${{ hashFiles('requirements-pipeline.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-hf-
+
+      - name: Install Dependencies
+        run: pip install -r requirements-pipeline.txt
+
+      - name: Run Pipeline (Incremental)
+        run: python src/run_pipeline.py --stage all
+
+      - name: Commit Processed Files
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add data/processed/ metrics.json docs/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Automated data refresh [skip ci]"
+          git push
