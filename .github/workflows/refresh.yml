@@ -31,7 +31,7 @@ jobs:
         run: pip install -r requirements-pipeline.txt
 
       - name: Run Pipeline (Incremental)
-        run: python src/run_pipeline.py --stage all
+        run: python -m src.run_pipeline --stage all
 
       - name: Commit Processed Files
         run: |
